@@ -96,7 +96,7 @@ with st.sidebar:
 
     for i in range(n_inputs):
         # Create columns for supermarket and address inputs
-        c1, c2 = st.columns(2)
+        c1, c2 = st.columns([2,3)
         with c1:
             supermarkt = st.selectbox(f"Supermarkt{i+1}", icons.keys(), key=f"supermarkt_{i}")
             supermarkten.append(supermarkt)
