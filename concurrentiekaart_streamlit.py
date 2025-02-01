@@ -76,11 +76,13 @@ def add_map_markers(map_object, locations, icon_height=40):
 ################################################################
 
 st.title("Concurrentiekaart")
+placeholder_image = st.image('https://imgvisuals.com/cdn/shop/products/animated-world-map-with-pins-267288.gif?v=1698899562')
 
 # Initialize lists to store inputs for supermarkets and addresses
 supermarkten = []
 adressen = []
 
+# Supermarkticonen laden
 icons = glob.glob('logo/*.png')
 icons = {l.replace('.png', '').replace('logo/', '') : l for l in icons}
 
@@ -106,6 +108,8 @@ with st.sidebar:
     submitButton = st.button(label='Run')
 
 if submitButton:
+    placeholder_image.empty()
+
     with st.spinner('Bezig met kaart bouwen'):
         inputs = [(B, A) for A, B in zip(supermarkten, adressen)]
 
