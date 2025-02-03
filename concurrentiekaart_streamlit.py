@@ -141,4 +141,4 @@ if submitButton:
 
     # Show map
     map_html = my_map._repr_html_()
-    st.components.v1.html(map_html, width=1000, height=800)
+    st.components.v1.html(map_html, width=1200, height=900)
