@@ -69,7 +69,7 @@ def add_map_markers(map_object, locations, icon_height=40):
 
         icon = folium.CustomIcon(loc["icon"], icon_size=(icon_width, icon_height))  # Larger icon size to prevent overlap
 
-        marker = folium.Marker([loc["lat"], loc["lon"]], popup=loc["name"], icon=icon)
+        marker = folium.Marker([loc["lat"], loc["lon"]], popup=loc["name"], icon=icon, , draggable=True)
 
         marker.add_to(map_object)
 
