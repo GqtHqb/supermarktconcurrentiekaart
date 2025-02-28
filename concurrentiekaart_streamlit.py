@@ -75,6 +75,9 @@ def add_map_markers(map_object, locations, icon_height=40):
 
 ################################################################
 
+st.set_page_config(page_title="Concurrentiekaart")
+
+
 st.title("Concurrentiekaart")
 placeholder_image = st.image('https://imgvisuals.com/cdn/shop/products/animated-world-map-with-pins-267288.gif?v=1698899562')
 
