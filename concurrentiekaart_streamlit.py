@@ -75,7 +75,7 @@ def add_map_markers(map_object, locations, icon_height=40):
 
 ################################################################
 
-st.set_page_config(page_title="Concurrentiekaart")
+st.set_page_config(page_title="Concurrentiekaart", layout="wide")
 
 
 st.title("Concurrentiekaart")
