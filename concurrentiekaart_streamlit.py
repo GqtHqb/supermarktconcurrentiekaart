@@ -108,7 +108,7 @@ with st.sidebar:
             adres = st.text_input(f"Adres{i+1}", placeholder='Typ adres hier', key=f"adres_{i}")
             adressen.append(adres)
 
-    submitButton = st.button(label='Run')
+    submitButton = st.button("Los geht's", type='primary', icon='🔥')
 
 if submitButton:
     placeholder_image.empty()
